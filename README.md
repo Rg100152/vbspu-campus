@@ -16,12 +16,29 @@
 [![Responsive](https://img.shields.io/badge/Responsive-2D6A4F?style=for-the-badge&logo=googlechrome&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries)
 [![Developer: Raj Gautam](https://img.shields.io/badge/Developer-Raj%20Gautam-C84B31?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rg100152)
 [![License: MIT](https://img.shields.io/badge/License-MIT-D4A359?style=for-the-badge)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-rg100152.github.io-2D6A4F?style=for-the-badge&logo=githubpages&logoColor=white)](https://rg100152.github.io/vbspu-campus/)
 
 [Live Site](https://rg100152.github.io/vbspu-campus/) · [Repository](https://github.com/Rg100152/vbspu-campus) · [Official VBSPU](https://www.vbspu.ac.in/en)
 
 </div>
 
 ---
+
+## 🚀 Live Demo
+
+The website is **deployed and live** with GitHub Pages:
+
+**🔗 https://rg100152.github.io/vbspu-campus/**
+
+| Deployment detail | Value |
+|---|---|
+| Hosting | GitHub Pages |
+| Source branch | `main` |
+| Source path | `/` (repository root) |
+| Deploy workflow | Every merged PR to `main` publishes automatically |
+| Repository | [Rg100152/vbspu-campus](https://github.com/Rg100152/vbspu-campus) |
+
+To redeploy after changes, merge the PR into `main` — Pages rebuilds from the root directory automatically. No build step or separate hosting configuration is required.
 
 ## About the project
 
