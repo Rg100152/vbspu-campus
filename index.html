@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B0E14">
+  <meta name="description" content="VBSPU Campus — a campus blog and virtual showcase of Veer Bahadur Singh Purvanchal University, Jaunpur: heritage architecture, academic life, Eklavya Stadium and student stories.">
+  <title>VBSPU Campus — Campus Blog &amp; Virtual Showcase</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Transparent sticky glass navbar -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="VBSPU Campus home">
+        <img src="assets/images/logo.svg" alt="VBSPU Campus emblem" width="52" height="52">
+        <span class="brand__text">
+          <strong>VBSPU Campus</strong>
+          <small>वीर बहादुर सिंह पूर्वांचल विश्वविद्यालय</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="#home" class="nav-link is-active">Home</a></li>
+        <li><a href="#landmarks" class="nav-link">Campus Landmarks</a></li>
+        <li><a href="#blog" class="nav-link">Blog Stories</a></li>
+        <li><a href="#gallery" class="nav-link">Photo Gallery</a></li>
+        <li><a href="#about" class="nav-link">About VBSPU</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-toggle" id="search-toggle" aria-label="Open quick search" aria-expanded="false" aria-controls="search-panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        </button>
+        <a class="nav-cta" href="#blog">Read Stories <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <div class="search-panel__inner">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input type="search" id="site-search" placeholder="Search landmarks, stories, gallery…" aria-label="Search site content" autocomplete="off">
+        <button type="button" id="search-clear" aria-label="Clear search">Clear</button>
+      </div>
+      <p class="search-hint" id="search-hint" aria-live="polite">Filtering campus cards and stories as you type.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__bg" id="hero-bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="glass-badge hero__badge">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Est. 1987 <span aria-hidden="true">•</span> Jaunpur, U.P.
+        </div>
+
+        <p class="hero__kicker">A Campus Blog &amp; Virtual Showcase</p>
+        <h1 id="hero-title" class="hero__title">VBSPU <span>Campus</span></h1>
+        <p class="hero__hindi">वीर बहादुर सिंह पूर्वांचल विश्वविद्यालय</p>
+        <p class="hero__lead">Where red-sandstone arches, quiet libraries and spirited student life come together. Explore the landmarks, stories and everyday magic of VBSPU Jaunpur.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#landmarks">Explore Landmarks <span aria-hidden="true">→</span></a>
+          <a class="btn btn--glass" href="#blog">Read Campus Stories</a>
+        </div>
+
+        <dl class="hero__stats" aria-label="Campus at a glance">
+          <div><dt>Established</dt><dd>1987</dd></div>
+          <div><dt>Campus</dt><dd>171.5 acres</dd></div>
+          <div><dt>Location</dt><dd>Jaunpur, U.P.</dd></div>
+        </dl>
+      </div>
+
+      <a class="scroll-indicator" href="#landmarks" aria-label="Scroll to campus landmarks">
+        <span class="scroll-indicator__mouse" aria-hidden="true"><i></i></span>
+        <span>Scroll to explore</span>
+      </a>
+    </section>
+
+    <!-- FEATURE_SECTIONS -->
+  </main>
+
+  <!-- Developer credit footer -->
+  <footer class="site-footer" id="about">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/images/logo.svg" alt="VBSPU Campus emblem" width="64" height="64">
+        <h2>VBSPU Campus</h2>
+        <p>A student-made digital tribute to the heritage, architecture and everyday life of Veer Bahadur Singh Purvanchal University, Jaunpur.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#landmarks">Campus Landmarks</a></li>
+          <li><a href="#blog">Blog Stories</a></li>
+          <li><a href="#gallery">Photo Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>University</h3>
+        <ul>
+          <li><a href="https://www.vbspu.ac.in/en" target="_blank" rel="noopener noreferrer">Official VBSPU Site ↗</a></li>
+          <li><a href="https://www.vbspu.ac.in/en/page/central-library" target="_blank" rel="noopener noreferrer">Vivekananda Central Library ↗</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Veer_Bahadur_Singh_Purvanchal_University" target="_blank" rel="noopener noreferrer">About VBSPU ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__credit">
+        <h3>Developer</h3>
+        <p>Developed &amp; Designed by<br><strong>Raj Gautam</strong> <span>(@Rg100152)</span></p>
+        <a class="footer__gh" href="https://github.com/Rg100152" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        <a class="footer__gh" href="https://github.com/Rg100152/vbspu-campus" target="_blank" rel="noopener noreferrer">Source Repository ↗</a>
+        <p class="footer__dept">Department of Computer Applications (BCA)<br>VBSPU, Jaunpur</p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> VBSPU Campus. Made with care in Jaunpur.</p>
+      <p>Independent student project · <a href="https://opensource.org/license/mit" target="_blank" rel="noopener noreferrer">MIT License</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
