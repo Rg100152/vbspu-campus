@@ -102,4 +102,75 @@
 
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+
+  /* ---------------- Motion layer ---------------- */
+  document.documentElement.classList.add('js');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const revealTargets = document.querySelectorAll('.section__head, .glass-card, .gallery-item');
+  if (revealTargets.length) {
+    revealTargets.forEach((element, index) => {
+      element.setAttribute('data-reveal', element.classList.contains('gallery-item') ? 'scale' : '');
+      element.style.setProperty('--reveal-delay', `${(index % 4) * 75}ms`);
+    });
+
+    if (!('IntersectionObserver' in window) || reduceMotion) {
+      revealTargets.forEach((element) => element.classList.add('is-visible'));
+    } else {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          if (entry.target.classList.contains('section__head')) {
+            const accent = entry.target.querySelector('.section__title em');
+            if (accent) accent.classList.add('is-sheen');
+          }
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+      revealTargets.forEach((element) => revealObserver.observe(element));
+    }
+  }
+
+  if (!reduceMotion && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('[data-tilt]').forEach((card) => {
+      card.addEventListener('pointermove', (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - 0.5;
+        const y = (event.clientY - rect.top) / rect.height - 0.5;
+        card.classList.add('is-tilting');
+        card.style.transform = `perspective(900px) rotateX(${(-y * 4.5).toFixed(2)}deg) rotateY(${(x * 4.5).toFixed(2)}deg) translateY(-4px)`;
+      });
+      card.addEventListener('pointerleave', () => {
+        card.classList.remove('is-tilting');
+        card.style.transform = '';
+      });
+    });
+  }
+
+  const heroBg = document.getElementById('hero-bg');
+  if (heroBg && !reduceMotion) {
+    let ticking = false;
+    const updateParallax = () => {
+      const distance = Math.min(window.scrollY, window.innerHeight);
+      heroBg.style.setProperty('--parallax', `${(distance * 0.12).toFixed(1)}px`);
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(updateParallax);
+    }, { passive: true });
+  }
+
+  /* Screenshot automation: ?shot=hero|landmarks|blog|gallery|lightbox */
+  const shot = new URLSearchParams(window.location.search).get('shot');
+  if (shot === 'landmarks' || shot === 'gallery') {
+    window.addEventListener('load', () => {
+      window.requestAnimationFrame(() => {
+        const target = document.getElementById(shot);
+        if (target) target.scrollIntoView({ behavior: 'instant', block: 'start' });
+      });
+    });
+  }
 })();
