@@ -19,7 +19,7 @@
         { type: 'p', text: 'Heritage-inspired architecture is easy to admire from a distance, but its real value is how it shapes daily life. Covered walkways offer shade in the Uttar Pradesh summer. courtyards become informal classrooms. The administrative building behind the gate keeps the practical machinery of a large university running — admissions, examinations and the many small conversations that keep student life moving.' },
         { type: 'quote', text: 'A gate is a promise: whatever is beyond it belongs to you for a while.' },
         { type: 'img', src: IMG + 'vbspu-main-building.jpg', alt: 'University building seen from the campus', caption: 'The main building, photographed from inside the campus.' },
-        { type: 'p', text: 'Look closely and you will notice the blend of styles that defines so much of eastern Uttar Pradesh's institutional architecture: the arch, the dome, the practical modern block. It is not a museum piece. It is a working, breathing campus — and that is what makes it worth photographing, walking through and remembering.' }
+        { type: 'p', text: "Look closely and you will notice the blend of styles that defines so much of eastern Uttar Pradesh's institutional architecture: the arch, the dome, the practical modern block. It is not a museum piece. It is a working, breathing campus — and that is what makes it worth photographing, walking through and remembering." }
       ]
     },
     library: {
@@ -31,7 +31,7 @@
       hero: IMG + 'vbspu-central-library-1.jpg',
       heroAlt: 'Reading space inside Vivekananda Central Library',
       body: [
-        { type: 'lead', text: 'Established in 1999 and housed in its present three-storey building since 2004, the Vivekananda Central Library is the university's quiet engine room.' },
+        { type: 'lead', text: "Established in 1999 and housed in its present three-storey building since 2004, the Vivekananda Central Library is the university's quiet engine room." },
         { type: 'p', text: 'The library was inaugurated by the then Vice-President of India, Bhairon Singh Shekhawat, and later recognised as a “Centre of Excellence” by the Government of Uttar Pradesh in 2016. But the statistics matter less than the atmosphere: the soft scrape of a chair, the turn of a page, the low conversation near the issue counter.' },
         { type: 'h3', text: 'Where analog meets digital' },
         { type: 'p', text: 'SOUL software manages circulation, cataloguing and OPAC/Web OPAC, while Wi-Fi extends access beyond closing hours. More than 150 people can sit and work here at a time. For a BCA student, it is often the place where a semester project finally makes sense — somewhere between a textbook, a search result and a stubborn debugging session.' },
@@ -49,7 +49,7 @@
       hero: IMG + 'vbspu-eklavya-stadium.jpg',
       heroAlt: 'Eklavya Stadium at VBSPU Jaunpur',
       body: [
-        { type: 'lead', text: 'Eklavya Stadium is where the university's energy changes tempo. Classes end, the ground fills, and the campus starts cheering.' },
+        { type: 'lead', text: "Eklavya Stadium is where the university's energy changes tempo. Classes end, the ground fills, and the campus starts cheering." },
         { type: 'p', text: 'From the Jaunpur Premier League T-20 final to inter-university kabaddi competitions, the sports complex plays host to moments that are kept in phone galleries long after results are forgotten. On ordinary days it belongs to the runners doing laps, the cricketers claiming the pitch and the spectators who arrive with nowhere else to be.' },
         { type: 'h3', text: 'More than a scoreboard' },
         { type: 'p', text: 'Sport at VBSPU works the way campus life should: it mixes people who would never meet in a lecture hall. Departments become teams, hostels become rival camps, and a good catch is celebrated with the same seriousness as a good grade.' },
@@ -67,8 +67,8 @@
       heroAlt: 'Convocation ceremony at Veer Bahadur Singh Purvanchal University',
       body: [
         { type: 'lead', text: 'Convocation turns the campus into a stage. Years of assignments, exams and late-night study sessions compress into a single afternoon of robes, applause and photographs.' },
-        { type: 'p', text: 'The university's convocations mark the close of one chapter and the opening of another. Families travel to Jaunpur, departments line up together, and the corridors fill with the particular mixture of pride and nervousness that only a graduation day can produce.' },
-        { type: 'img', src: IMG + 'vbspu-auditorium.jpg', alt: 'VBSPU auditorium', caption: 'Campus venues come alive during the university's major ceremonies.' },
+        { type: 'p', text: "The university's convocations mark the close of one chapter and the opening of another. Families travel to Jaunpur, departments line up together, and the corridors fill with the particular mixture of pride and nervousness that only a graduation day can produce." },
+        { type: 'img', src: IMG + 'vbspu-auditorium.jpg', alt: 'VBSPU auditorium', caption: "Campus venues come alive during the university's major ceremonies." },
         { type: 'h3', text: 'The people behind the ceremony' },
         { type: 'p', text: 'It is easy to focus on the stage, but convocation is equally a story of teachers, lab assistants, library staff and classmates. Graduates often carry their names forward with them — not only the degree, but the people who made the years bearable.' },
         { type: 'quote', text: 'A graduation photograph is small proof that a very large journey happened here.' }
@@ -86,7 +86,7 @@
         { type: 'lead', text: 'A university is often remembered through its people, but it is understood through its spaces. At VBSPU, the academic blocks, research institutes and open courtyards describe how the campus thinks.' },
         { type: 'p', text: 'The Department of Computer Applications and the other teaching blocks sit among greener pathways and older institutional structures. lecture rooms, laboratories and departmental offices coexist with informal gathering points — a stair landing, a shaded verandah, a patch of lawn between two buildings.' },
         { type: 'h3', text: 'A campus of layers' },
-        { type: 'p', text: 'Different decades leave different marks. Heritage-inspired facades sit beside functional modern additions; the research institute speaks of the university's expanding ambitions; the auditorium and specialist blocks host the cultural and technical life of the institution. Together they create a place that feels accumulated rather than designed all at once.' },
+        { type: 'p', text: "Different decades leave different marks. Heritage-inspired facades sit beside functional modern additions; the research institute speaks of the university's expanding ambitions; the auditorium and specialist blocks host the cultural and technical life of the institution. Together they create a place that feels accumulated rather than designed all at once." },
         { type: 'img', src: IMG + 'vbspu-research-institute.jpg', alt: 'Research institute building at VBSPU', caption: 'One of the campus buildings devoted to research and advanced study.' },
         { type: 'p', text: 'For students, these buildings become a map of memory: the lab where a first program ran, the corridor where a friendship started, the block where final-year presentations were delivered.' }
       ]
