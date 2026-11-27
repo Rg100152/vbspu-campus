@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 132" role="img" aria-labelledby="title desc">
+  <title id="title">VBSPU Campus</title>
+  <desc id="desc">Emblem with a heritage arch, torch of learning, circuit leaf motif and VBSPU Campus wordmark in gold and terracotta.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2C94C"/>
+      <stop offset="0.55" stop-color="#D4A359"/>
+      <stop offset="1" stop-color="#9A6B2F"/>
+    </linearGradient>
+    <linearGradient id="brick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E05A47"/>
+      <stop offset="1" stop-color="#C84B31"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#D4A359" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#D4A359" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Emblem -->
+  <g transform="translate(8 6)">
+    <circle cx="60" cy="60" r="58" fill="#0B0E14" stroke="url(#gold)" stroke-width="2"/>
+    <circle cx="60" cy="60" r="52" fill="url(#halo)"/>
+
+    <!-- heritage arch -->
+    <path d="M24 92V57a36 36 0 0 1 72 0v35" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M33 92V58a27 27 0 0 1 54 0v34" fill="none" stroke="url(#brick)" stroke-width="2" opacity="0.9"/>
+    <path d="M18 92h84" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- torch of learning -->
+    <path d="M60 50v28" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M52 78h16" stroke="url(#brick)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M60 22c9 10 13 16 13 23a13 13 0 0 1-26 0c0-7 4-13 13-23Z" fill="url(#brick)"/>
+    <path d="M60 33c4 5 6 8 6 12a6 6 0 0 1-12 0c0-4 2-7 6-12Z" fill="url(#gold)"/>
+
+    <!-- circuit leaf motif -->
+    <g fill="none" stroke="#2D6A4F" stroke-width="2.4" stroke-linecap="round" opacity="0.95">
+      <path d="M31 101c0-10 5-17 13-21M89 101c0-10-5-17-13-21"/>
+      <circle cx="31" cy="101" r="3" fill="#2D6A4F"/>
+      <circle cx="89" cy="101" r="3" fill="#2D6A4F"/>
+      <path d="M31 101h12M77 101h12"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(140 0)">
+    <text x="0" y="56" font-family="'Playfair Display','Cinzel',Georgia,serif" font-size="41" font-weight="700" letter-spacing="2.2" fill="url(#gold)">VBSPU <tspan fill="#E05A47">CAMPUS</tspan></text>
+    <text x="2" y="82" font-family="'Noto Sans Devanagari','Plus Jakarta Sans',sans-serif" font-size="15" letter-spacing="1.1" fill="#D4A359" opacity="0.9">वीर बहादुर सिंह पूर्वांचल विश्वविद्यालय</text>
+    <text x="2" y="104" font-family="'Plus Jakarta Sans','Poppins',sans-serif" font-size="12.5" letter-spacing="3.4" fill="#8B95A7">JAUNPUR · UTTAR PRADESH</text>
+    <path d="M2 115h332" stroke="#D4A359" stroke-opacity="0.35" stroke-width="1"/>
+  </g>
+</svg>
