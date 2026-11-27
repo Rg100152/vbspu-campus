@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -265,7 +266,128 @@
       </div>
     </div>
 
-    <!-- GALLERY_SECTION -->
+    <!-- Masonry photo gallery -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="section__eyebrow">Through the lens</p>
+            <h2 class="section__title" id="gallery-title">A campus in <em>pictures</em></h2>
+            <p class="section__hindi">परिसर की तस्वीरें · एक नज़र में</p>
+          </div>
+          <p class="section__desc">Landmarks, ceremonies, quiet corners and the people who fill them. Click any photograph to see it fullscreen.</p>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter gallery by topic">
+          <button class="filter-chip is-active" type="button" data-gallery-filter="all" aria-pressed="true">All photos</button>
+          <button class="filter-chip" type="button" data-gallery-filter="Architecture" aria-pressed="false">Architecture</button>
+          <button class="filter-chip" type="button" data-gallery-filter="Campus Life" aria-pressed="false">Campus Life</button>
+          <button class="filter-chip" type="button" data-gallery-filter="Events" aria-pressed="false">Events</button>
+          <button class="filter-chip" type="button" data-gallery-filter="Heritage" aria-pressed="false">Heritage</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <figure class="gallery-item gallery-item--tall" data-category="Architecture" data-caption="The campus in daylight — VBSPU, Jaunpur" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-campus-view.jpg" aria-label="View photo: The campus in daylight">
+              <img src="assets/images/campus/vbspu-campus-view.jpg" alt="Daylight view of the VBSPU campus" loading="lazy">
+              <span class="gallery-item__overlay"><span>Architecture</span><strong>The campus in daylight</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item" data-category="Architecture" data-caption="Main entrance gate of VBSPU" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-campus-gate.jpg" aria-label="View photo: Main entrance gate">
+              <img src="assets/images/campus/vbspu-campus-gate.jpg" alt="Main entrance gate of VBSPU" loading="lazy">
+              <span class="gallery-item__overlay"><span>Architecture</span><strong>Main entrance gate</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item gallery-item--mid" data-category="Campus Life" data-caption="Reading room at Vivekananda Central Library" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-central-library-1.jpg" aria-label="View photo: Reading room at the central library">
+              <img src="assets/images/campus/vbspu-central-library-1.jpg" alt="Reading room at Vivekananda Central Library" loading="lazy">
+              <span class="gallery-item__overlay"><span>Campus Life</span><strong>Reading room</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item gallery-item--tall" data-category="Events" data-caption="Convocation ceremony at VBSPU" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-convocation.jpg" aria-label="View photo: Convocation ceremony">
+              <img src="assets/images/campus/vbspu-convocation.jpg" alt="Convocation ceremony at VBSPU" loading="lazy">
+              <span class="gallery-item__overlay"><span>Events</span><strong>Convocation day</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item" data-category="Campus Life" data-caption="Eklavya Stadium and the sports complex" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-eklavya-stadium.jpg" aria-label="View photo: Eklavya Stadium">
+              <img src="assets/images/campus/vbspu-eklavya-stadium.jpg" alt="Eklavya Stadium sports complex" loading="lazy">
+              <span class="gallery-item__overlay"><span>Campus Life</span><strong>Eklavya Stadium</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item gallery-item--mid" data-category="Events" data-caption="T-20 cricket final at the university ground" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-cricket-final.jpg" aria-label="View photo: T-20 cricket final">
+              <img src="assets/images/campus/vbspu-cricket-final.jpg" alt="Cricket final at the university ground" loading="lazy">
+              <span class="gallery-item__overlay"><span>Events</span><strong>T-20 final</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item" data-category="Architecture" data-caption="Research institute building on campus" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-research-institute.jpg" aria-label="View photo: Research institute building">
+              <img src="assets/images/campus/vbspu-research-institute.jpg" alt="Research institute building at VBSPU" loading="lazy">
+              <span class="gallery-item__overlay"><span>Architecture</span><strong>Research institute</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item gallery-item--tall" data-category="Heritage" data-caption="Heritage sign in the historic city of Jaunpur" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/jaunpur-heritage-sign.jpg" aria-label="View photo: Jaunpur heritage sign">
+              <img src="assets/images/campus/jaunpur-heritage-sign.jpg" alt="Heritage sign in Jaunpur city" loading="lazy">
+              <span class="gallery-item__overlay"><span>Heritage</span><strong>Jaunpur heritage</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item" data-category="Campus Life" data-caption="Students together on the VBSPU campus" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-student-life.jpg" aria-label="View photo: Students on campus">
+              <img src="assets/images/campus/vbspu-student-life.jpg" alt="Students spending time together on campus" loading="lazy">
+              <span class="gallery-item__overlay"><span>Campus Life</span><strong>Campus friends</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item gallery-item--mid" data-category="Events" data-caption="Drone technology bootcamp participants" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-drone-bootcamp.jpg" aria-label="View photo: Drone technology bootcamp">
+              <img src="assets/images/campus/vbspu-drone-bootcamp.jpg" alt="Participants at a drone technology bootcamp" loading="lazy">
+              <span class="gallery-item__overlay"><span>Events</span><strong>Drone bootcamp</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item" data-category="Architecture" data-caption="VBSPU auditorium" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-auditorium.jpg" aria-label="View photo: VBSPU auditorium">
+              <img src="assets/images/campus/vbspu-auditorium.jpg" alt="VBSPU auditorium building" loading="lazy">
+              <span class="gallery-item__overlay"><span>Architecture</span><strong>Auditorium</strong></span>
+            </button>
+          </figure>
+
+          <figure class="gallery-item gallery-item--mid" data-category="Campus Life" data-caption="Bookshelves at the central library" data-tilt>
+            <button type="button" class="gallery-item__button" data-lightbox-src="assets/images/campus/vbspu-central-library-3.jpg" aria-label="View photo: Library bookshelves">
+              <img src="assets/images/campus/vbspu-central-library-3.jpg" alt="Bookshelves inside the central library" loading="lazy">
+              <span class="gallery-item__overlay"><span>Campus Life</span><strong>Library stacks</strong></span>
+            </button>
+          </figure>
+        </div>
+        <p class="filter-empty" id="gallery-empty" hidden>No photos match that search. Try another word or category.</p>
+      </div>
+    </section>
+
+    <!-- Fullscreen gallery lightbox -->
+    <div class="modal lightbox" id="lightbox" hidden>
+      <div class="modal__backdrop" data-close-lightbox></div>
+      <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Photo viewer" tabindex="-1">
+        <button class="modal__close" type="button" data-close-lightbox aria-label="Close photo viewer">×</button>
+        <button class="lightbox__nav lightbox__nav--prev" type="button" id="lightbox-prev" aria-label="Previous photo">‹</button>
+        <figure class="lightbox__figure">
+          <img id="lightbox-image" src="" alt="">
+          <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox__nav lightbox__nav--next" type="button" id="lightbox-next" aria-label="Next photo">›</button>
+      </div>
+    </div>
   </main>
 
   <!-- Developer credit footer -->
@@ -313,5 +435,6 @@
 
   <script src="js/main.js" defer></script>
   <script src="js/blog-modal.js" defer></script>
+  <script src="js/gallery-lightbox.js" defer></script>
 </body>
 </html>
